@@ -13,7 +13,7 @@ class Sidebar extends Component {
         return (
             <div className="sidebar">
                 
-                <a href="/"><SidebarRow selected={true} Icon={Home} title="Home" /></a>
+                <a href="/youtube-clone"><SidebarRow selected={true} Icon={Home} title="Home" /></a>
                 <a href="/trending"><SidebarRow Icon={Trending} title="Trending" /></a> 
                 <SidebarRow Icon={Subscription} title="Subscription" />
                 <hr />
