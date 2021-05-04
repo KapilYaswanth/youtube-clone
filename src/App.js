@@ -43,7 +43,7 @@ class App extends React.Component {
       <Sidebar /> 
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/youtube-clone">
       <Recommended data={this.state.channeldetails} videoId={this.state.selectedVideoId}/>
       <Videolist
           onVideoSelected={this.onVideoSelected}
