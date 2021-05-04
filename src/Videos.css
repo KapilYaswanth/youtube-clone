@@ -1,0 +1,58 @@
+.videos{
+    flex:0.5;
+    padding:40px 20px;
+    padding-top: 0px;
+
+}
+.videolist{
+    flex:0.3;
+    padding:40px 20px;
+    padding-top: 0px;   
+}
+
+.video {
+    box-shadow: 0 2px 1px lightgray;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    margin: 20px 0;
+  }
+  
+  .video .title {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .video-list {
+    border-left: 1px solid lightgray;
+    grid-row: span 2;
+    padding: 0 20px;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .video-player{
+      margin-top: 50px;
+    flex:0.5;
+    position:sticky;
+    top:0;
+    padding:40px 20px;
+    padding-top: 0px;
+    z-index: 1;
+    background: white;
+  }
+  .video-player .video-iframe {
+    position:fixed;
+    margin-top: -50px;
+    width: 47%;
+    height: 60%;
+    z-index: 1;
+    background: white;
+  }
+  .description{
+    margin-top: 360px;
+    position: fixed;
+    width: 47%;
+    background: white;
+  }

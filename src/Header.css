@@ -1,0 +1,66 @@
+.header{
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background: white;
+}
+
+.header-logo{
+    height: 25px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.header-center{
+    display: flex;
+    align-items: center;
+    width: 140%;
+    border: 1px solid black;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background: white;
+}
+
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-inputButton{
+    width: 50px !important;
+    color: gray;
+    background: #fafafa;
+    border-left:1px solid lightgray;
+    cursor: pointer;
+    position: sticky;
+    z-index: 100;
+    background: white;
+}
+.header-rightIcon{
+    margin-right: 10px;
+}
+
+.header-center > input{
+    flex: 1;
+    border:none;
+    outline: none;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background: white;
+}
+.header-form{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 480px;
+    top:0;
+    z-index: 100;
+    background: white;
+}
