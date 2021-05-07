@@ -1,37 +1,17 @@
 import React from "react";
+import './Videos.css'
 
-
-const Videos = ({ data, onVideoSelected }) => {
-  
-  
-  function getCss(imageurl) {
-    const _styles = {
-      backgroundImage: `url(${imageurl})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "180px",
-      position: "relative"
-    };
-    return _styles;
-  }
-  function constructVideoTitles(vidoesData) {
-    return vidoesData.map(({ snippet, id }, index) => {
-      
-      return (
-        <div
-          className="video"
-          key={index}
-          onClick={() => onVideoSelected(id.videoId, snippet)}>
-          <div style={getCss(snippet.thumbnails.high.url)} key={index} />
-          <p className="title">{snippet.title}</p>
-        </div>
-      );
-    });
-  
-  
-  }
-  return constructVideoTitles(data);
-};
+const Videos=({videoitem,onVideoSelect})=>{
+  return(
+    <div onClick={()=>{onVideoSelect(videoitem)}} className="video-item ui item">
+      <img className="ui image" src={videoitem.snippet.thumbnails.medium.url} alt=""/>
+      <div className="ui content">
+      <div className="header">{videoitem.snippet.title}</div>
+      </div>
+     
+    </div>
+  );
+}
 
 export default Videos;
  
