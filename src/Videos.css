@@ -5,7 +5,14 @@
   left: 120px;
   right: 550px;
 }
-  
+  .loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30%;
+    color: black;
+  }
   .video-item{
     display: flex !important;
     align-items: center !important;

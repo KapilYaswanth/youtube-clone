@@ -1,9 +1,10 @@
 import React from 'react'
 import './Videos.css'
+import CircularProgress from '@material-ui/core/CircularProgress';
 export default function Recommended({video}) {
             
             if(!video){
-              return <div>Loading...</div>
+              return <div className="loading"><CircularProgress color="black" disableShrink /></div>
             }
             return(
             <div className="pos">
