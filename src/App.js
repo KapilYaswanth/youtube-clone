@@ -26,9 +26,9 @@ class App extends React.Component {
     this.setState({selectedVideoId:video})
     console.log(video)
   }
-  componentDidMount(){
-    this.onTermSubmit('javascript english')
-  }
+  // componentDidMount(){
+  //   this.onTermSubmit('javascript english')
+  // }
   render(){
   return (
     
